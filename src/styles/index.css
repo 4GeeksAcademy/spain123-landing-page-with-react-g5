@@ -9,3 +9,29 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+#cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+#cards img {
+    height: 250px;
+}
+
+#cards .card, #cards img {
+    width: 250px;
+}
+
+
+#cards .card .card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+#cards .card .card-body p {
+    flex: 1;
+}
