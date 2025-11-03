@@ -10,14 +10,17 @@ import Footer from "./Footer.jsx";
 //create your first component
 const Home = () => {
 	return (
-		<div className="container-fluid">
-            
-			<Navbar/>
-			<Jumbotron/>
-			<CardsSection/>
+		<>       
+			<header>
+				<Navbar/>
+			</header>
+			<main className="flex-fill">
+				<Jumbotron/>
+				<CardsSection/>
+			</main>
 			<Footer/>
 
-		</div>
+		</>
 	);
 };
 
