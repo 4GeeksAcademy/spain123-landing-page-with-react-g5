@@ -11,7 +11,7 @@ const Jumbotron = ({title, text, students}) => {
                     {text || "Trabajando en equipo con Abel y Lucas"}</p>
 
                 {students && <div className="jumbotron-actions">{students}</div>}
-                <button class="btn btn-primary btn-lg" type="button">Call to action</button>
+                <button className="btn btn-primary btn-lg" type="button">Call to action</button>
             </div>
         </div>
     );

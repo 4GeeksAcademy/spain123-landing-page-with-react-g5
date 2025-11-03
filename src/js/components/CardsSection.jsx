@@ -36,7 +36,7 @@ const CardSection = () => {
 		img: "https://blog.naturlider.com/wp-content/uploads/2020/03/AdobeStock_309195144-post-dia-mundial-naturaleza.jpeg"
 	  }
 	];
-    const cards = cardsData.map(card => <Card title={card.title} text={card.text} img={card.img} />)
+    const cards = cardsData.map((card, index) => <Card key={index} title={card.title} text={card.text} img={card.img} />)
     return (
         <section id="cards" className="container">
             {cards}
